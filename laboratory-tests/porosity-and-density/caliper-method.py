@@ -24,3 +24,9 @@ def pore_volume(wsat, gw, pw):
 def dry_density(gw, bv):
     µd = gw/bv
     return µd
+
+#wsat->saturated weight
+#bv->bulk volume
+def saturated_density(wsat, bv):
+    µsat = wsat/bv
+    return µsat
