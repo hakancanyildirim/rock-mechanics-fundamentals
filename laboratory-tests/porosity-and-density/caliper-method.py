@@ -18,3 +18,9 @@ def effective_porosity(pv, bv):
 def pore_volume(wsat, gw, pw):
     pv = (wsat-gw)/pw
     return pv
+
+#gw->mineral grain weight
+#bv->bulk volume
+def dry_density(gw, bv):
+    µd = gw/bv
+    return µd
