@@ -22,3 +22,10 @@ def dry_density(gw, bv):
 def saturated_density(wsat, bv):
     µsat = wsat/bv
     return µsat
+
+#wsat->saturated weight
+#wsub->submerged weight
+#pw->density of water
+def bulk_volume(wsat, wsub, pw):
+    bv = (wsat-wsub)/pw
+    return bv
