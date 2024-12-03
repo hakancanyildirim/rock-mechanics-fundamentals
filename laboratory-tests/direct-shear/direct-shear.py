@@ -22,3 +22,10 @@ def normal_stress_on_sheared_plane(tau, i, sigma):
 def shear_stress_and_normal_stress_relation(sigmam, fi):
     taum = sigmam*tan(fi)
     return taum
+
+#sigma->normal stress
+#fi->basic friction angle of the material
+#i->angle of incidence of the projections
+def substition_of_shear_and_normal_stresses(sigma, fi, i):
+    tau = sigma*tan(fi+i)
+    return tau
