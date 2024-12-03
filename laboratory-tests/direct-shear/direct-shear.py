@@ -29,3 +29,10 @@ def shear_stress_and_normal_stress_relation(sigmam, fi):
 def substition_of_shear_and_normal_stresses(sigma, fi, i):
     tau = sigma*tan(fi+i)
     return tau
+
+#c->apparent cohesion at a stress level corresponding to fi(b)
+#sigma->normal stress
+#fi->basic friction angle of the material
+def shear_strength(c, sigma, fi):
+    tau = c+sigma*tan(fi)
+    return tau
