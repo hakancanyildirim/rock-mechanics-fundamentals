@@ -19,3 +19,10 @@ def shear_strength_vs_normal_stress(sigma1, tau1, sigma2, tau2):
     plt.show()
 
 #direct_shear_graph([1,2,3], [2,4,1], [2,4,1], [1,2,3])
+
+def normal_stress_vs_normal_displacement(stresses, displacements):
+    plt.plot(stresses, displacements)
+    plt.xlabel('Normal Stress σ (MPa)')
+    plt.ylabel('Normal Displacement')
+    plt.title('Normal Stress σ vs Normal Displacement')
+    plt.show()
