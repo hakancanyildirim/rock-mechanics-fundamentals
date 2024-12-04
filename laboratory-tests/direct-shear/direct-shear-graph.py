@@ -26,3 +26,11 @@ def normal_stress_vs_normal_displacement(stresses, displacements):
     plt.ylabel('Normal Displacement')
     plt.title('Normal Stress σ vs Normal Displacement')
     plt.show()
+
+def shear_stress_vs_shear_displacement(stresses, displacements):
+    plt.plot(displacements, stresses)
+    plt.xlabel('Shear Displacement')
+    plt.ylabel('Shear Stress τ (MPa)')
+    plt.title('Shear Stress τ vs Shear Displacement')
+    plt.show()
+    
