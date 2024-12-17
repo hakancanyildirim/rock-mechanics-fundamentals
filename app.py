@@ -1,4 +1,5 @@
 import sys
+from main import *
 from PyQt5.QtCore import QSize, Qt
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
 
@@ -9,9 +10,9 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("Rock Mechanics Toolkit")
 
         self.setFixedSize(QSize(int(1920/1.8), int(1080/1.5)))
-        
-        #button = QPushButton("testing")
-        #self.setCentralWidget(button)
+
+        button = QPushButton(str(shear_strength(3, 5, 30)))
+        self.setCentralWidget(button)
 
 app = QApplication(sys.argv)
 
