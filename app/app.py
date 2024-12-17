@@ -7,6 +7,9 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.setWindowTitle("Rock Mechanics Toolkit")
+
+        self.setFixedSize(QSize(int(1920/1.8), int(1080/1.5)))
+        
         #button = QPushButton("testing")
         #self.setCentralWidget(button)
 
